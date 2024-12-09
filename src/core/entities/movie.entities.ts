@@ -7,3 +7,10 @@ export interface Movie {
   releaseDate: Date;
   title: string;
 }
+export interface FullMovie extends Movie {
+  budget: number;
+  duration: number;
+  genres: string[];
+  originalTitle: string;
+  productionCompanies: string[];
+}

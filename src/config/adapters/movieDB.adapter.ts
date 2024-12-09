@@ -1,3 +1,4 @@
+import { THE_MOVIE_DB_KEY } from '@env';
 import {AxiosAdapter} from './http/axios.adapter';
 
 export const movieDBFetcher = new AxiosAdapter({
@@ -6,7 +7,7 @@ export const movieDBFetcher = new AxiosAdapter({
     language: 'es',
   },
   headers: {
-    Authorization: 'Bearer ' + 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZDgzZjQ0YWQ2YjAwNTBkNjhkNmU0YTBlN2U5ZjlkZiIsIm5iZiI6MTczMzI1MDQwOS45ODgsInN1YiI6IjY3NGY0ZDY5YjRlYjE3Nzk2MzQxNjc0ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.N2aBq-rURipQlqWTq5sRmXniDFBA_ukokxiGyz9-y8Y',
+    Authorization: 'Bearer ' + THE_MOVIE_DB_KEY,
     accept: 'application/json',
   },
 });

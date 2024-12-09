@@ -13,7 +13,7 @@ export const Navigation = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
         headerStyle: {
           elevation: 0, //linea que separa
           shadowColor: 'transparent', //lo mismo para ios
